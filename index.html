@@ -6,9 +6,49 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Semolina-test</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <main>
+        <section class="watch">
+            <span class="task-text">First task</span>
+            <div class="analog-watch">
+                <svg width="140" height="140">
+                    <circle id="clock-pane" cx="70" cy="70" r="65" stroke-width="5px"/>
+                    <line id="hour-arrow" x1="70" y1="70" x2="70" y2="38" />
+                    <line id="minute-arrow" x1="70" y1="70" x2="70" y2="20" />
+                    <text x="60" y="24" class="time-points">12</text>
+                    <text x="120" y="76" class="time-points">3</text>
+                    <text x="64" y="128" class="time-points">6</text>
+                    <text x="9" y="76" class="time-points">9</text>
+                </svg>
+            </div>
+        </section>
 
+        <section class="calculator">
+            <span class="task-text">Second task</span>
+            <div class="calculator-cover">
+                    <input type="number" id="calc-input" min="1"
+                           max="9999999999" placeholder="Enter your number"
+                           pattern="\d{1,5}" title="Only digits" value="" required>
+                    <div class="action-btns_cover">
+                        <a class="action-btn" id="btn-sqr">sqr</a>
+                        <a class="action-btn" id="btn-sqrt">sqrt</a>
+                        <a class="action-btn" id="btn-ln">ln</a>
+                    </div>
+            </div>
+        </section>
 
+        <section class="string-fn">
+        <span class="task-text">Third task</span>
+        <div class="string-result_cover">
+            <p class="function-text">Here you could check your "xy" string</p>
+            <input type="text" id="xy-string" placeholder="Put only xy symbols here" value="" required>
+            <a id="check-string_btn">Check it!</a>
+            <p id="string-result"></p>
+        </div>
+    </section>
+    </main>
+<script src="common.js"></script>
 </body>
 </html>

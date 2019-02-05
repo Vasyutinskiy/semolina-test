@@ -1,0 +1,162 @@
+/*Roboto font link*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*Basic styles*/
+body {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    cursor: pointer;
+}
+div, a, section, span, input {
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10%;
+}
+section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0 0;
+    min-height: 330px;
+}
+.task-text {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: underline;
+    padding: 20px 0 20px;
+    display: inline-block;
+}
+/*END Basic styles*/
+
+/*Watch styles*/
+.analog-watch {
+    width: 140px;
+    height: 140px;
+    padding-top: 30px;
+}
+#clock-pane {
+    stroke: #C7CFE2;
+    fill: #D5DCEC;
+}
+#hour-arrow, #minute-arrow {
+    stroke: #5B5D6E;
+    stroke-linecap: round;
+}
+#hour-arrow {
+    stroke-width: 6px;
+}
+#minute-arrow {
+    stroke-width: 3px;
+}
+.time-points {
+    font: normal 20px sans-serif;
+    fill: #5B5D6E;
+}
+/*END Watch styles*/
+
+/*Calculator styles*/
+.calculator-cover {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    background: #eeeeee;
+    border: 3px solid #c0c0c0;
+}
+.calculator-cover input {
+    width: 100%;
+    max-width: 380px;
+    height: 30px;
+    outline: #b22222;
+    border-color: #eeeeee;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.action-btns_cover {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #c0c0c0;
+    padding: 5px 0 10px;
+    margin-top: 5px;
+}
+.action-btns_cover .action-btn {
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.action-btns_cover .action-btn:hover {
+    -webkit-box-shadow: 0px 0px 22px -2px rgba(224,224,224,1);
+    -moz-box-shadow: 0px 0px 22px -2px rgba(224,224,224,1);
+    box-shadow: 0px 0px 22px -2px rgba(224,224,224,1);
+}
+/*END Calculator styles*/
+
+/*Check string styles*/
+.string-result_cover {
+    padding-top: 20px;
+}
+.string-result_cover input {
+    width: 100%;
+    height: 30px;
+    max-width: 260px;
+    margin: 10px auto;
+    outline: #5B5D6E;
+    border: 2px solid #5B5D6E;
+    display: block;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.function-text {
+    font-size: 20px;
+    text-align: center;
+    color: #5B5D6E;
+}
+#check-string_btn {
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    border: none;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 15px;
+    background: #C7CFE2;
+    color: #5B5D6E;
+    border-radius: 2px;
+}
+#check-string_btn:hover {
+    background: #D5DCEC;
+}
+#string-result {
+    font-size: 18px;
+    text-align: center;
+    color: #5B5D6E;
+    max-width: 280px;
+    margin: auto;
+}
+/*END Check string styles*/
